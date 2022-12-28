@@ -2,11 +2,11 @@ function oddArray(arr) {
     let result = [];
     function helperRecursiveFn(arr) {
         if(arr.length === 0) {
-            return; // 1
+            return; 
         } else if(arr[0] % 2 !== 0) {
-            result.push(arr[0]); // 2
+            result.push(arr[0]);
         }
-        helperRecursiveFn(arr.slice(1)); // 3
+        helperRecursiveFn(arr.slice(1)); 
     }
     helperRecursiveFn(arr);
     return result;
